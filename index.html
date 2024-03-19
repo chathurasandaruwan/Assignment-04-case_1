@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transistion</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/css/all.min.css">
+    <style>
+        section>div {
+            background-color: purple;
+            color: white;
+            width: 250px;
+            height: 60px;
+            margin: 60px 0px;
+            margin-left: -200px;
+            transition-duration: 3s;
+
+            position: relative;
+        }
+
+        section>div>h3 {
+            height: fit-content;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            margin: auto;
+
+        }
+
+        section>div>div {
+            height: fit-content;
+
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section>div:hover{
+            margin-left: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h3>Manu 01</h3>
+        <div> <i class="fa-solid fa-house"></i></div>
+    </div>
+
+    <div>
+        <h3>Manu 01</h3>
+        <div><i class="fa-solid fa-user"></i></div>
+    </div>
+
+    <div>
+        <h3>Manu 01</h3>
+        <div><i class="fa-solid fa-file-invoice"></i></div>
+    </div>
+
+    <div>
+        <h3>Manu 01</h3>
+        <div><i class="fa-solid fa-bug"></i></div>
+    </div>
+
+    <div>
+        <h3>Manu 01</h3>
+        <div><i class="fa-solid fa-flag"></i></div>
+    </div>
+
+</section>
+<script src="assets/fontawesome-free-6.5.1-web/js/all.min.js"></script>
+</body>
+</html>
